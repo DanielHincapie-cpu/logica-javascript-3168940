@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="opcion">Color Favorito:</label>
+        <select id="opcion" name="opcion">
+            <option value="" disabled selected>Selecciona un color</option>
+            <option value="red">Rojo</option>
+            <option value="green">Verde</option>
+            <option value="orange">Naranja</option>
+        </select>
+
+        <fieldset>
+            <legend>Selecciona un animal:</legend>
+            <label>
+                <input type="radio" name="radioOpcion" value="Gatos" required> Gatos
+            </label>
+            <label>
+                <input type="radio" name="radioOpcion" value="Perros"> Perros
+            </label>
+            <label>
+                <input type="radio" name="radioOpcion" value="Mapaches"> Mapaches
+            </label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <p id="mensajeConfirmacion" style="display:none; text-align:center; margin-top:15px; font-weight:bold; color:green;"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
