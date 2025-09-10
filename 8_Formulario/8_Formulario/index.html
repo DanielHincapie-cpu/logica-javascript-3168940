@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login">
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="opcion">Color Favorito:</label>
+        <select id="opcion" name="opcion">
+            <option value="" disabled selected>Selecciona un color</option>
+            <option value="red">Rojo</option>
+            <option value="green">Verde</option>
+            <option value="orange">Naranja</option>
+        </select>
+
+        <fieldset>
+            <legend>Selecciona un equipo:</legend>
+            <label>
+                <input type="radio" name="radioOpcion" value="Gatos" required> Gatos
+            </label>
+            <label>
+                <input type="radio" name="radioOpcion" value="Perros"> Perros
+            </label>
+            <label>
+                <input type="radio" name="radioOpcion" value="Mapaches"> Mapaches
+            </label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+    <div id="userPage">
+        <img id="img-equipo" src="..." alt="">
+        <h1 id="text-saludo">Hola usuario</h1>
+        <p> Perteneces al equipo  <span id="equipoUsuario"></span id="text-equipo">  </span>
+        <p> Seleccionaste el color  <span id="colorUsuario"></span>  </p>
+        </p>
+
+    </div>
+
+    <p id="mensajeConfirmacion" style="display:none; text-align:center; margin-top:15px; font-weight:bold; color:green;"></p>
+
+<div style="text-align: center;"><button id="Regresar" type="button">Regresar</button></div>
+    <script src="app.js"></script>
+</body>
+</html>
