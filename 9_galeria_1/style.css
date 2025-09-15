@@ -1,0 +1,16 @@
+  #galeria {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+          
+        }
+
+        #contenedor {
+            display: flex; 
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        #contenedor img {
+            width: 400px; 
+            height: auto;
+        }
