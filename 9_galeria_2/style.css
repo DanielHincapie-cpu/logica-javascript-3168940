@@ -1,0 +1,30 @@
+body{
+	background:#000;
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+	text-align: center;
+	margin-top:140px;
+
+}
+
+.miniatura{
+	cursor:pointer;
+}  
+
+.miniatura:hover{
+	opacity:.5;
+}
+
+p{
+	color:white;
+
+}
+
+h1{
+	color:white;
+	font-size: 5em;
+	font-family: 'Pacifico', cursive;
+}
+
