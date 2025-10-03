@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodolfo Aicardi: Rey del Vallenato Popular</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <title>Rodolfo Aicardi: Rey del Vallenato Popular</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E53E3E',
+                        secondary: '#A0AEC0',
+                        muted: '#F7FAFC',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50">
+
+    <!-- Navegación -->
+    <nav class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-primary">Rodolfo Aicardi</h1>
+            <!-- Botón de menú para móviles -->
+            <button id="menu-button" class="md:hidden text-gray-900 dark:text-gray-50 z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </button>
+            <div id="nav-links" class="nav-links hidden md:flex items-center gap-6">
+                <a href="#inicio" class="text-lg font-medium hover:text-primary transition-colors">Inicio</a>
+                <a href="#biografia" class="text-lg font-medium hover:text-primary transition-colors">Biografía</a>
+                <a href="#carrera" class="text-lg font-medium hover:text-primary transition-colors">Carrera</a>
+                <a href="#legado" class="text-lg font-medium hover:text-primary transition-colors">Legado</a>
+                <button id="dark-mode-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                    <svg id="moon-icon" class="h-6 w-6 hidden dark:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                    <svg id="sun-icon" class="h-6 w-6 block dark:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m4.93 19.07 1.41-1.41"/><path d="m17.66 6.34 1.41-1.41"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden py-20 fade-in">
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1633469926055-b1503bfa541d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvbWJpYW4lMjBtdXNpYyUyMHZhbGxlbmF0byUyMHNpbmdlcnxlbnwxfHx8fDE3NTg3MzUwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+             alt="Música colombiana" class="absolute inset-0 w-full h-full object-cover z-0 opacity-80">
+        <div class="relative z-20 container mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl lg:text-8xl font-bold mb-4">Rodolfo Aicardi</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                El Rey del Vallenato Popular y Leyenda de la Música Colombiana (1936-2007)
+            </p>
+            <button onclick="scrollToSection('biografia')" class="bg-primary text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-red-700 transition-colors">
+                Conoce su Historia
+            </button>
+        </div>
+    </section>
+
+    <section id="biografia" class="py-20 bg-muted dark:bg-gray-800 fade-in">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-3xl md:text-4xl font-bold text-primary">Biografía</h3>
+                    <p class="text-lg leading-relaxed">
+                        Rodolfo Aicardi nació en Sincelejo, Sucre, el 15 de marzo de 1936. Fue un cantante y compositor colombiano que se convirtió en uno de los máximos exponentes del vallenato popular y la música tropical.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Conocido por su voz inconfundible y su capacidad para interpretar tanto vallenatos como boleros, rancheras y música popular, Aicardi marcó varias generaciones con sus éxitos inolvidables.
+                    </p>
+                    <button id="toggle-bio" class="text-primary font-semibold hover:underline">Leer más</button>
+                    <div id="additional-bio" class="overflow-hidden transition-all duration-500 max-h-0 opacity-0">
+                        <p class="text-lg leading-relaxed mt-4">
+                            Su infancia estuvo marcada por la pobreza, pero desde muy joven mostró un talento natural para la música. Comenzó su carrera artística en pequeños pueblos de la Costa Atlántica, donde perfeccionó su estilo único que combinaría elementos del vallenato tradicional con otros géneros populares.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1614625322127-fd3d693b0992?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwbWljcm9waG9uZSUyMG11c2ljfGVufDF8fHx8MTc1ODY1MTUwN3ww&ixlib=rb-4.1.0&q=80&w=1080"
+                         alt="Micrófono vintage" class="w-full h-auto rounded-xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrera" class="py-20 fade-in">
+       <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mt-12 max-w-sm mx-auto">
+    <h4 class="text-xl font-bold mb-4">Reproductor de Música</h4>
+    
+    <audio id="audio-player" src="-CARIÑITO- RODOLFO AICARDI (FULL AUDIO).mp3"></audio>
+    
+    <div class="flex items-center justify-center gap-4">
+        <button id="prev-song" class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-skip-back"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" x2="5" y1="19" y2="5"/></svg>
+        </button>
+        <button id="play-pause" class="p-4 rounded-full bg-primary text-white shadow-md hover:bg-red-700 transition-colors music-player">
+            <svg id="play-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <svg id="pause-icon" class="w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="6" height="16" x="4" y="4"/><rect width="6" height="16" x="14" y="4"/></svg>
+        </button>
+        <button id="next-song" class="p-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-skip-forward"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" x2="19" y1="5" y2="19"/></svg>
+        </button>
+    </div>
+    <div class="mt-4 text-center">
+        <p id="current-song-title" class="font-bold text-lg">Cariñito</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Rodolfo Aicardi</p>
+    </div>
+</div>
+    </section>
+
+    <section id="legado" class="py-20 bg-muted dark:bg-gray-800 fade-in">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1633469926055-b1503bfa541d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvbWJpYSUyMG11c2ljJTIwY3VsdHVyZXxlbnwxfHx8fDE3NTg3MzUwNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                         alt="Cultura musical colombiana" class="w-full h-auto rounded-xl shadow-xl">
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-3xl md:text-4xl font-bold text-primary">Su Legado</h3>
+                    <p class="text-lg leading-relaxed">
+                        Rodolfo Aicardi falleció el 13 de abril de 2007, pero su música sigue siendo escuchada y admirada por nuevas generaciones. Sus canciones se han convertido en himnos de la cultura popular colombiana.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Su influencia trasciende géneros y épocas, inspirando a incontables artistas y manteniendo vivo el espíritu del vallenato tradicional en la era moderna.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg mb-2">
+                "La música es el alma de los pueblos" - Rodolfo Aicardi (1936-2007)
+            </p>
+            <p class="text-sm opacity-75">
+                Homenaje al Rey del Vallenato Popular
+            </p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

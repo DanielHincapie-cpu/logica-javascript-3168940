@@ -1,0 +1,57 @@
+/* Estilos personalizados para animaciones */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Animación de entrada al hacer scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animación de pulso para el reproductor de música */
+.music-player.playing {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Transición suave para el menú */
+.nav-links {
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        padding-top: 80px;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .dark .nav-links {
+        background-color: #1a1a1a;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+}
